@@ -2,352 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTIFOLIO</title>
-    <link rel="stylesheet" href="./style.css" />
 
+    <meta name="description" content="Nicolas Cleik | Software Engineer specializing in Python, JavaScript, and Scalable Architecture." />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cleik.dev/" />
+    <meta property="og:title" content="Nicolas Cleik | Software Engineer" />
+    <meta property="og:description" content="Building robust backend systems and intuitive full-stack solutions. Python, JS & SQL." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nicolas Cleik | Software Engineer" />
+    <meta name="twitter:description" content="Transitioning from clean code to scalable architecture." />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg" />
+
+    <title>Nicolas Cleik | Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/favicon/favicon.png">
+
+    <link rel="stylesheet" href="./style/style.css" />
     <script src="./script/script.js" defer></script>
   </head>
 
   <body>
+    <div class="bg-effect"></div>
+
     <header>
-      <div class="pefil">
-        <div class="pefil_photo">
-          <img src="./assets/header/me.jpg" alt="Photo of me" />
+      <nav class="navbar">
+        <div class="logo">
+          <span class="bracket">&lt;</span>NC<span class="bracket">/&gt;</span>
         </div>
-        <div class="perfil_text">
-          <p class="nome">Nicolas Cleik</p>
-          <p class="informacao">Desenvolvedor Full Stack em formação</p>
-        </div>
-      </div>
-      <div class="navegacao">
-        <a href="#home">Home</a>
-        <a href="#creations">Creations</a>
-        <a href="#about_me">About</a>
-        <a href="#contrat_me">Contact</a>
-      </div>
+        <ul class="nav-links">
+          <li><a href="#home">_hello</a></li>
+          <li><a href="#projects">_projects</a></li>
+          <li><a href="#about">_about</a></li>
+          <li><a href="#experience">_experience</a></li>
+          <li><a href="#publications">_knowledge</a></li>
+          <li><a href="#contact">_contact</a></li>
+          <li>
+            <a href="./assets/resume.pdf" target="_blank" class="btn-resume">Resume.pdf</a>
+          </li>
+        </ul>
+        <button class="hamburger" aria-label="Menu Mobile">
+            <span></span><span></span><span></span>
+        </button>
+      </nav>
     </header>
 
     <main>
-      <div id="home">
-        <div class="sobre_min">
-          <h1 class="titulo">Passionate About Solutions</h1>
-          <p class="eu">
-            Early-career software developer with a passion for building
-            efficient and intuitive solutions. I have a solid foundation in
-            JavaScript, Python, and SQL, and I am constantly enhancing my skills
-            to create modern and functional web applications.
+      <section id="home" class="hero hidden">
+        <div class="hero-content"></div>
+      </section>
+
+      <section id="projects" class="section hidden">
+        <div class="section-header">
+          <span class="section-number">01.</span>
+          <h3>Featured Projects</h3>
+          <div class="line"></div>
+        </div>
+        <div class="projects-grid"></div>
+      </section>
+
+      <section id="about" class="section hidden">
+        <div class="section-header">
+          <span class="section-number">02.</span>
+          <h3>About Me</h3>
+          <div class="line"></div>
+        </div>
+        <div class="about-content"></div>
+      </section>
+
+      <section id="experience" class="section hidden">
+        <div class="section-header">
+          <span class="section-number">03.</span>
+          <h3>Professional Experience</h3>
+          <div class="line"></div>
+        </div>
+        <div class="timeline"></div>
+      </section>
+
+      <section id="publications" class="section hidden">
+        <div class="section-header">
+          <span class="section-number">04.</span>
+          <h3>Knowledge Sharing</h3>
+          <div class="line"></div>
+        </div>
+        <div class="publications-grid"></div>
+      </section>
+
+      <section id="contact" class="section hidden">
+        <div class="contact-container">
+          <span class="section-number">05.</span>
+          <h2 class="big-heading">What's Next?</h2>
+          <p class="contact-desc">
+            I am currently looking for new opportunities to contribute to
+            challenging projects. Whether you have a question or just want to
+            say hi, my inbox is always open.
           </p>
-        </div>
-        <div class="planet_photo">
-          <img src="./assets/home/planet.png" alt="Image of Saturn" />
-        </div>
-      </div>
 
-      <div id="creations">
-        <div class="earth_planet">
-          <img src="./assets/creations/earth2.png" alt="Image of earth" />
-        </div>
-
-        <div id="periodic_table">
-          <div class="element">
-            <span class="name">Carbon</span>
-            <span class="number">6</span>
-            <span class="symbol">C</span>
-            <span class="weight">12 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Rênio</span>
-            <span class="number">75</span>
-            <span class="symbol">Re</span>
-            <span class="weight">186 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Astato</span>
-            <span class="number">85</span>
-            <span class="symbol">At</span>
-            <span class="weight">210 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Iodo</span>
-            <span class="number">53</span>
-            <span class="symbol">I</span>
-            <span class="weight">126.9 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Oxigênio</span>
-            <span class="number">8</span>
-            <span class="symbol">O</span>
-            <span class="weight">16 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Nitrogênio</span>
-            <span class="number">7</span>
-            <span class="symbol">N</span>
-            <span class="weight">14 u</span>
-          </div>
-          <div class="element">
-            <span class="name">Enxofre</span>
-            <span class="number">16</span>
-            <span class="symbol">S</span>
-            <span class="weight">32 u</span>
-          </div>
-        </div>
-
-        <div id="projects">
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/calculadora.png"
-              alt="Image of JavaScript Calculator"
-            />
-            <h3 class="project_title">JavaScript Calculator</h3>
-            <p class="project_description">
-              A fully functional calculator built with pure JavaScript. This
-              project applies programming logic to process mathematical
-              operations in a responsive user interface.
-            </p>
-            <div class="frameworks">
-              <span class="framework">HTML</span>
-              <span class="framework">CSS</span>
-              <span class="framework">JavaScript</span>
+          <form class="contact-form" action="https://formspree.io/f/mdkybobb" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" required placeholder="Name" />
+              <input type="email" name="email" required placeholder="Email" />
             </div>
-            <div class="links">
-              <a
-                href="https://doctor069.github.io/Calculadora-Javascript/"
-                target="_blank"
-                class="live_demo"
-                >
-                Live Demo</a
-              >
-              <a
-                href="https://github.com/Doctor069/Calculadora-Javascript"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/simongame.png"
-              alt="Image of The Simon Game"
-            />
-            <h3 class="project_title">The Simon Game</h3>
-            <p class="project_description">
-              A recreation of the classic "Simon" memory game. This project
-              focuses on DOM manipulation and game logic with JavaScript to
-              generate sequences and validate user input.
-            </p>
-            <div class="frameworks">
-              <span class="framework">HTML</span>
-              <span class="framework">CSS</span>
-              <span class="framework">JavaScript</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://doctor069.github.io/The-Simon-Game---JS/"
-                target="_blank"
-                class="live_demo"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Doctor069/The-Simon-Game---JS"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/websiteHeaply.png"
-              alt="Image of Healthy Web Site"
-            />
-            <h3 class="project_title">Healthy Web Site</h3>
-            <p class="project_description">
-              A modern landing page for a healthy lifestyle service. This
-              project demonstrates the use of semantic HTML and CSS
-              (Flexbox/Grid) to create an attractive and responsive layout.
-            </p>
-            <div class="frameworks">
-              <span class="framework">HTML</span>
-              <span class="framework">CSS</span>
-              <span class="framework">JavaScript</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://doctor069.github.io/Front-End-----I-Unidade---Interative-Watch/"
-                target="_blank"
-                class="live_demo"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Doctor069/Front-End-----I-Unidade---Interative-Watch"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/python.webp"
-              alt="Python Logo"
-            />
-            <h3 class="project_title">Gym systems in Terminal</h3>
-            <p class="project_description">
-              A terminal-based gym management system. Developed in Python, this
-              project focuses on back-end logic, data manipulation, and user
-              interaction via a command-line interface (CLI).
-            </p>
-            <div class="frameworks">
-              <span class="framework">Python</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://github.com/Doctor069/desenvolvimento_de_sistema_de_academia_python"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/arduino.png"
-              alt="Arduino Logo"
-            />
-            <h3 class="project_title">SmartHouse in Arduino</h3>
-            <p class="project_description">
-              A home automation (Smart House) project built on the Arduino
-              platform. The C++ code controls sensors and actuators to create a
-              connected and intelligent environment.
-            </p>
-            <div class="frameworks">
-              <span class="framework">C++</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyo6g4BW0znyoiGoI1CeAw1CSXDQ_XJOds"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img
-              src="./assets/creations/projects/CSharp.png"
-              alt="CSharp Logo"
-            />
-            <h3 class="project_title">Web API</h3>
-            <p class="project_description">
-              Construction of a robust Web API using C# and the .NET ecosystem.
-              This project focuses on creating RESTful endpoints for back-end
-              operations and data handling.
-            </p>
-            <div class="frameworks">
-              <span class="framework">C#</span>
-            </div>
-            <div class="links">
-              <a
-                href="https://github.com/Doctor069/Criando-uma-web-API"
-                target="_blank"
-                class="source_code"
-                >Source Code</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="about_me">
-        <div class="text_about_me">
-          <h2>About Me</h2>
-          <p>
-            On the front-end, I have knowledge of HTML, CSS (including Flexbox
-            and Grid), and jQuery. I am currently expanding my stack to the
-            Node.js and React.js ecosystem, as well as deepening my knowledge of
-            frameworks like Bootstrap to streamline the creation of responsive
-            interfaces.
-            <br /><br />
-            In database management, I have a solid understanding of SQL that
-            goes beyond simple querying. My training includes data modeling
-            (ERD), data normalization (up to 3NF), and building complex queries
-            using JOINs, subqueries, and aggregate functions. My next step is to
-            apply this knowledge to systems like MySQL and PostgreSQL, and to
-            explore the NoSQL world with MongoDB and Firebase.
-            <br /><br />
-            Among my practical projects, I developed <strong>CleikTask</strong>,
-            a task manager for a university project, and
-            <strong>Cleik Info</strong>, a technology e-commerce website, where
-            I was able to apply my skills in a practical setting. <br /><br />
-            I am seeking an opportunity to collaborate on challenging projects,
-            learn from experienced teams, and contribute my dedication and
-            problem-solving skills.
-          </p>
-        </div>
-        <div class="photo_me">
-          <img src="./assets/aboutme/spaceman.png" alt="Photo of Spaceman" />
-        </div>
-      </div>
-
-      <div id="contrat_me">
-        <div class="photo_galaxy">
-          <img src="./assets/contactme/galaxy.png" alt="Galaxy Photo" />
-        </div>
-
-        <div class="text_to_contact_me">
-          <h2>Let's Work Together!</h2>
-          <p>
-            Interested in collaborating on a project or just want to say hi?
-            Feel free to reach out!
-          </p>
-        </div>
-
-        <div class="email">
-          <h2>Contact Me</h2>
-          <form
-            class="contact_form"
-            action="https://formspree.io/f/mdkybobb"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="Novo Contato do Portfólio!"
-            />
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://doctor069.github.io/seu-repositorio/obrigado.html"
-            />
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-status" class="status-msg"></p>
           </form>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Nicolas Cleik. All rights reserved.</p>
-      <img src="./assets/footer/Earth2.png" alt="Image of earth" />
+      <p>Designed & Built by Nicolas Cleik</p>
+      <div class="socials"></div>
     </footer>
+
+    <div id="modal-overlay" class="modal-hidden">
+        <div class="modal-content">
+            <div class="modal-header-bar">
+                <button id="close-modal-btn">&times;</button>
+            </div>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
   </body>
 </html>
