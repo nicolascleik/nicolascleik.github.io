@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
     } catch (error) {
-        alert("ERRO CRÍTICO: " + error.message);
-        console.error(error);
+        console.error("Erro crítico ao inicializar site:", error);
     }
 });
 

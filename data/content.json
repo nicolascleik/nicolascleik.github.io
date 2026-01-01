@@ -64,7 +64,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
         ],
-        "images": ["./assets/projects/saas1.png"]
+        "images": []
       },
       {
         "id": "health-dashboard",
@@ -258,7 +258,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
         ],
-        "images": ["./assets/projects/saas1.png"]
+        "images": []
       },
       {
         "id": "health-dashboard",
