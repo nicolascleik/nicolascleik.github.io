@@ -85,12 +85,12 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#home" data-i18n="nav.home"></a></li>
-          <li><a href="#projects" data-i18n="nav.projects"></a></li>
-          <li><a href="#about" data-i18n="nav.about"></a></li>
-          <li><a href="#experience" data-i18n="nav.experience"></a></li>
-          <li><a href="#publications" data-i18n="nav.knowledge"></a></li>
-          <li><a href="#contact" data-i18n="nav.contact"></a></li>
+          <li><a href="#home" data-i18n="nav.home">_hello</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">_projects</a></li>
+          <li><a href="#about" data-i18n="nav.about">_about</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">_experience</a></li>
+          <li><a href="#publications" data-i18n="nav.knowledge">_knowledge</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">_contact</a></li>
           <li>
             <a
               href="./assets/resume.pdf"
@@ -98,7 +98,7 @@
               class="btn-resume"
               data-i18n="nav.resume"
               data-type="pdf"
-            ></a>
+            >Resume.pdf</a>
           </li>
           <li>
             <button id="lang-switch" class="lang-btn">EN / PT</button>
@@ -113,7 +113,9 @@
 
     <main>
       <section id="home" class="hero hidden">
-        <div class="hero-content"></div>
+        <div class="hero-content">
+            <h1 style="display:none;">Nicolas Cleik - Software Engineer</h1>
+        </div>
 
         <div class="hero-visual">
           <div class="cube-wrapper">
@@ -132,7 +134,7 @@
       <section id="projects" class="section hidden">
         <div class="section-header">
           <span class="section-number">01.</span>
-          <h3 data-i18n="section.projects"></h3>
+          <h3 data-i18n="section.projects">Featured Projects</h3>
           <div class="line"></div>
         </div>
         <div class="projects-grid"></div>
@@ -141,7 +143,7 @@
       <section id="about" class="section hidden">
         <div class="section-header">
           <span class="section-number">02.</span>
-          <h3 data-i18n="section.about"></h3>
+          <h3 data-i18n="section.about">About Me</h3>
           <div class="line"></div>
         </div>
         <div class="about-content"></div>
@@ -150,7 +152,7 @@
       <section id="experience" class="section hidden">
         <div class="section-header">
           <span class="section-number">03.</span>
-          <h3 data-i18n="section.experience"></h3>
+          <h3 data-i18n="section.experience">Professional Experience</h3>
           <div class="line"></div>
         </div>
         <div class="timeline"></div>
@@ -159,7 +161,7 @@
       <section id="publications" class="section hidden">
         <div class="section-header">
           <span class="section-number">04.</span>
-          <h3 data-i18n="section.knowledge"></h3>
+          <h3 data-i18n="section.knowledge">Knowledge Sharing</h3>
           <div class="line"></div>
         </div>
         <div class="publications-grid"></div>
@@ -168,9 +170,11 @@
       <section id="contact" class="section hidden">
         <div class="contact-container">
           <span class="section-number">05.</span>
-          <h2 class="big-heading" data-i18n="contact.title"></h2>
+          <h2 class="big-heading" data-i18n="contact.title">What's Next?</h2>
 
-          <p class="contact-desc" data-i18n="contact.desc"></p>
+          <p class="contact-desc" data-i18n="contact.desc">
+            I am currently looking for new opportunities to contribute to challenging projects.
+          </p>
 
           <form
             class="contact-form"
@@ -182,12 +186,14 @@
                 type="text"
                 name="name"
                 required
+                placeholder="Name"
                 data-i18n-placeholder="contact.name"
               />
               <input
                 type="email"
                 name="email"
                 required
+                placeholder="Email"
                 data-i18n-placeholder="contact.email"
               />
             </div>
@@ -195,13 +201,14 @@
               name="message"
               rows="5"
               required
+              placeholder="Your Message"
               data-i18n-placeholder="contact.message"
             ></textarea>
             <button
               type="submit"
               class="btn btn-primary"
               data-i18n="contact.btn"
-            ></button>
+            >Send Message</button>
             <p id="form-status" class="status-msg"></p>
           </form>
         </div>
@@ -209,7 +216,7 @@
     </main>
 
     <footer>
-      <p data-i18n="footer.text"></p>
+      <p data-i18n="footer.text">Designed & Built by Nicolas Cleik</p>
       <div class="socials"></div>
     </footer>
 
