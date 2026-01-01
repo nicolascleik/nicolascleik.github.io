@@ -36,7 +36,7 @@
         "linkedin": "https://www.linkedin.com/in/nicolascleik/",
         "instagram": "https://instagram.com/dev.cleik"
       },
-      "resumeLink": "../assets/resumes/en/resume.pdf",
+      "resumeLink": "./assets/resumes/en/resume.pdf",
       "contactAction": "https://formspree.io/f/mdkybobb"
     },
     "about": {
@@ -106,7 +106,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
         ],
-        "images": [".././assets/projects/JSLogicCalculator/calculator.png"]
+        "images": ["././assets/projects/JSLogicCalculator/calculator.png"]
       },
       {
         "id": "simon-game",
@@ -117,7 +117,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
         ],
-        "images": [".././assets/projects/TheSimonGame/simon_game.png"]
+        "images": ["././assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
@@ -230,7 +230,7 @@
         "linkedin": "https://www.linkedin.com/in/nicolascleik/",
         "instagram": "https://instagram.com/dev.cleik"
       },
-      "resumeLink": "../assets/resumes/pt-br/resume.pdf",
+      "resumeLink": "./assets/resumes/pt-br/resume.pdf",
       "contactAction": "https://formspree.io/f/mdkybobb"
     },
     "about": {
@@ -300,7 +300,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
         ],
-        "images": [".././assets/projects/JSLogicCalculator/calculator.png"]
+        "images": ["././assets/projects/JSLogicCalculator/calculator.png"]
       },
       {
         "id": "simon-game",
@@ -311,7 +311,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
         ],
-        "images": [".././assets/projects/TheSimonGame/simon_game.png"]
+        "images": ["././assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
