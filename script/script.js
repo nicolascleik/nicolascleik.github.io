@@ -2,7 +2,12 @@
    1. ESTADO GLOBAL & SELETORES
    ========================================= */
 let allData = {};
-let currentLang = localStorage.getItem('site-lang') || 'en';
+let currentLang = localStorage.getItem('site-lang'); 
+if (!currentLang) {
+    currentLang = 'en';
+    localStorage.setItem('site-lang', 'en');
+}
+
 let globalProjectsData = [];
 let slideIndex = 0;
 let carouselInterval = null;
@@ -36,7 +41,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
     } catch (error) {
-        console.error("Erro crítico ao inicializar site:", error);
+        alert("ERRO CRÍTICO: " + error.message);
+        console.error(error);
     }
 });
 
