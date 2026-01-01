@@ -2,10 +2,18 @@
    1. ESTADO GLOBAL & SELETORES
    ========================================= */
 let allData = {};
-let currentLang = localStorage.getItem('site-lang'); 
+let currentLang = localStorage.getItem('site-lang');
+
 if (!currentLang) {
-    currentLang = 'en';
-    localStorage.setItem('site-lang', 'en');
+    const userLang = navigator.language || navigator.userLanguage; 
+    
+    if (userLang && userLang.toLowerCase().startsWith('pt')) {
+        currentLang = 'pt';
+    } else {
+        currentLang = 'en';
+    }
+    
+    localStorage.setItem('site-lang', currentLang);
 }
 
 let globalProjectsData = [];
