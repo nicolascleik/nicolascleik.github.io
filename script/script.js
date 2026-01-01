@@ -5,46 +5,39 @@ let globalProjectsData = [];
 let slideIndex = 0;
 let carouselInterval = null;
 
-// Elementos do Modal (Cache para performance)
 const modalOverlay = document.getElementById('modal-overlay');
 const modalBody = document.getElementById('modal-body');
 const closeModalBtn = document.getElementById('close-modal-btn');
-
 
 /* =========================================
    2. INICIALIZAÇÃO (MAIN)
    ========================================= */
 document.addEventListener("DOMContentLoaded", async function () {
     try {
-        // 1. Carrega Dados
         const response = await fetch('./data/content.json');
         const data = await response.json();
         
         globalProjectsData = data.projects;
 
-        // 2. Renderiza Conteúdo
         renderProfileData(data.profile);
         renderProjects(data.projects);
         renderAbout(data.about, data.profile.avatar);
         renderExperience(data.experience);
         renderPublications(data.publications);
 
-        // 3. Inicializa Componentes UI
         initScrollAnimation();
         initFormHandler();
         initMobileMenu();
-        initGlobalClickListeners(); // Interceptador de links (PDF, Imagens, Projetos)
+        initGlobalClickListeners();
 
     } catch (error) {
         console.error("Erro crítico ao inicializar site:", error);
     }
 });
 
-
 /* =========================================
    3. RENDERIZADORES (VIEW)
    ========================================= */
-
 function renderProfileData(profile) {
     const heroContainer = document.querySelector('.hero-content');
     if (heroContainer) {
@@ -60,7 +53,6 @@ function renderProfileData(profile) {
         `;
     }
 
-    // Atualizações pontuais
     const resumeBtn = document.querySelector('.btn-resume');
     if (resumeBtn && profile.resumeLink) resumeBtn.href = profile.resumeLink;
 
@@ -105,10 +97,9 @@ function renderProjects(projects) {
     container.innerHTML = projects.map((project, index) => {
         const projId = project.id || index;
         
-        // Lógica para ícones específicos nos links externos
         const externalLinksHTML = project.links.map(link => {
-            let icon = '🔗'; // Padrão
-            if (link.label.toLowerCase().includes('github')) icon = '<i class="fab fa-github"></i> 💻'; // Se usar FontAwesome, ou use emoji
+            let icon = '🔗';
+            if (link.label.toLowerCase().includes('github')) icon = '<i class="fab fa-github"></i> 💻';
             if (link.label.toLowerCase().includes('live')) icon = '🚀';
             if (link.label.toLowerCase().includes('docs')) icon = '📄';
             
@@ -145,7 +136,6 @@ function renderProjects(projects) {
 }
 
 window.openProjectDetails = function(event, id) {
-    // Se clicou em um link externo (Github/Live), não abre o modal
     if (event.target.closest('a')) return;
 
     const project = globalProjectsData.find(p => p.id === id) || globalProjectsData[id];
@@ -246,17 +236,12 @@ function closeModal() {
     }, 300);
 }
 
-// Listeners diretos do Modal
 if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
 if (modalOverlay) modalOverlay.addEventListener('click', (e) => {
     if (e.target === modalOverlay) closeModal();
 });
 
-
-// --- Lógica do Carrossel de Projetos ---
-// --- Lógica do Carrossel de Projetos ---
 function openProjectModal(project) {
-    // 1. Gera Slides
     let slidesHTML = '';
     if (project.images && project.images.length > 0) {
         slidesHTML = project.images.map(img => 
@@ -266,12 +251,10 @@ function openProjectModal(project) {
         slidesHTML = `<div class="carousel-slide fade" style="display:block; text-align:center; padding-top:150px; color:white;">No Images Available</div>`;
     }
 
-    // 2. Gera Links
     const linksHTML = project.links.map(link => 
         `<a href="${link.url}" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem; margin-right: 10px;">${link.label}</a>`
     ).join('');
 
-    // 3. Monta HTML Final (SEM A BARRA DUPLICADA)
     const contentHTML = `
         <div class="carousel-container">
             ${slidesHTML}
@@ -292,13 +275,11 @@ function openProjectModal(project) {
 
     openModal(contentHTML);
     
-    // Inicia Carrossel
     slideIndex = 0;
     showSlides(slideIndex);
     startCarousel(); 
 }
 
-// Controle do Slide (Global para acesso via onclick no HTML)
 window.moveSlide = function(n) {
     showSlides(slideIndex += n);
     resetCarouselTimer();
@@ -329,23 +310,47 @@ function resetCarouselTimer() {
     startCarousel();
 }
 
-
 /* =========================================
    5. INTERCEPTADOR DE CLIQUES (GLOBAL)
    ========================================= */
-
 function initGlobalClickListeners() {
     document.addEventListener('click', function(e) {
         const targetLink = e.target.closest('a');
         if (!targetLink) return;
 
         const type = targetLink.getAttribute('data-type');
-        const url = targetLink.getAttribute('href');
+        let url = targetLink.getAttribute('href');
 
-        // Lógica de Roteamento Interno do Modal
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        const isLocalhost = window.location.hostname === '127.0.0.1' || 
+                            window.location.hostname === 'localhost' || 
+                            window.location.hostname.startsWith('192.168.');
+
         if (type === 'pdf') {
+            const absoluteUrl = new URL(url, window.location.href).href;
+
+            if (isMobile) {
+                e.preventDefault();
+
+                if (isLocalhost) {
+                    alert("Aviso de Dev: O PDF Embed Mobile só funciona quando o site está online (Google não acessa localhost). Abrindo em nova aba para teste.");
+                    window.open(url, '_blank');
+                    return;
+                }
+
+                const googleViewerUrl = `https://docs.google.com/gview?url=${absoluteUrl}&embedded=true`;
+                
+                const pdfHTML = `
+                    <div class="content-wrapper-full">
+                        <iframe src="${googleViewerUrl}" class="pdf-viewer" title="Document Viewer" frameborder="0"></iframe>
+                    </div>
+                `;
+                openModal(pdfHTML);
+                return;
+            }
+
             e.preventDefault();
-            // PDF: Barra removida, pois já existe no HTML fixo
             const pdfHTML = `
                 <div class="content-wrapper-full">
                     <iframe src="${url}" class="pdf-viewer" title="Document Viewer"></iframe>
@@ -355,7 +360,6 @@ function initGlobalClickListeners() {
         }
         else if (type === 'image') {
             e.preventDefault();
-            // IMAGEM: Barra removida aqui também
             const imgHTML = `
                 <div class="content-wrapper-full">
                     <div class="image-scroll-container">
@@ -374,11 +378,9 @@ function initGlobalClickListeners() {
     });
 }
 
-
 /* =========================================
    6. UTILITÁRIOS E COMPONENTES UI
    ========================================= */
-
 function initScrollAnimation() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -446,14 +448,12 @@ function initMobileMenu() {
 
     if (!hamburger || !nav) return;
 
-    // Toggle Menu
     hamburger.addEventListener("click", (e) => {
         e.stopPropagation();
         nav.classList.toggle("nav-active");
         hamburger.classList.toggle("toggle");
     });
 
-    // Fechar ao clicar no link
     if (navLinks) {
         navLinks.forEach((link) => {
             link.addEventListener("click", () => {
@@ -463,7 +463,6 @@ function initMobileMenu() {
         });
     }
 
-    // Fechar ao clicar fora
     document.addEventListener("click", (event) => {
         const isMenuOpen = nav.classList.contains("nav-active");
         const isClickInsideMenu = nav.contains(event.target);
