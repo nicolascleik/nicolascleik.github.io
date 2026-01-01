@@ -1139,8 +1139,27 @@ footer {
   .modal-project-info h2 {
     font-size: 1.5rem;
   }
+
+  .section-header {
+    width: 100%;
+    overflow: hidden; 
+  }
+
+  .section-header h3 {
+    white-space: normal; 
+    font-size: 1.4rem;   
+    line-height: 1.2;    
+    text-align: left;
+  }
+
+  .line {
+    flex-shrink: 1; 
+    width: auto;      
+    flex-grow: 1;     
+    min-width: 50px;  
+    max-width: 100px;
+  }
   
-  /* Botão do idioma dentro do menu */
   .lang-btn {
     margin-left: 0;
     margin-top: 10px; 
@@ -1149,7 +1168,6 @@ footer {
     width: fit-content;
   }
 
-  /* --- AJUSTE FINAL: CUBO PEQUENO NO MOBILE --- */
   .hero-visual {
     right: 50%;
     left: 50%;
