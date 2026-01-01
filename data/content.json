@@ -64,7 +64,12 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
         ],
-        "images": [".././assets/projects/SaaSRetentionEngine/home_dark_mode.png", ".././assets/projects/SaaSRetentionEngine/home_light_mode.png", ".././assets/projects/SaaSRetentionEngine/feedback_form.png", ".././assets/projects/SaaSRetentionEngine/user_issues.png"]
+        "images": [
+            "./assets/projects/SaaSRetentionEngine/home_dark_mode.png", 
+            "./assets/projects/SaaSRetentionEngine/home_light_mode.png", 
+            "./assets/projects/SaaSRetentionEngine/feedback_form.png", 
+            "./assets/projects/SaaSRetentionEngine/user_issues.png"
+        ]
       },
       {
         "id": "health-dashboard",
@@ -106,7 +111,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
         ],
-        "images": ["././assets/projects/JSLogicCalculator/calculator.png"]
+        "images": ["./assets/projects/JSLogicCalculator/calculator.png"]
       },
       {
         "id": "simon-game",
@@ -117,12 +122,12 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
           { "label": "LIVE DEMO", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
         ],
-        "images": ["././assets/projects/TheSimonGame/simon_game.png"]
+        "images": ["./assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
       {
-        "period": "Jul 2025 - Dez 2025",
+        "period": "Oct 2023 - Present",
         "role": "Squad Leader & Full Stack Dev",
         "company": "@ Engplay (SaaS)",
         "desc": "Strategic partnership between Porto Digital & UNIT. Led Squad 28 in developing retention solutions.",
@@ -258,7 +263,12 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
         ],
-        "images": [".././assets/projects/SaaSRetentionEngine/home_dark_mode.png", ".././assets/projects/SaaSRetentionEngine/home_light_mode.png", ".././assets/projects/SaaSRetentionEngine/feedback_form.png", ".././assets/projects/SaaSRetentionEngine/user_issues.png"]
+        "images": [
+            "./assets/projects/SaaSRetentionEngine/home_dark_mode.png", 
+            "./assets/projects/SaaSRetentionEngine/home_light_mode.png", 
+            "./assets/projects/SaaSRetentionEngine/feedback_form.png", 
+            "./assets/projects/SaaSRetentionEngine/user_issues.png"
+        ]
       },
       {
         "id": "health-dashboard",
@@ -300,7 +310,7 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
         ],
-        "images": ["././assets/projects/JSLogicCalculator/calculator.png"]
+        "images": ["./assets/projects/JSLogicCalculator/calculator.png"]
       },
       {
         "id": "simon-game",
@@ -311,12 +321,12 @@
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
         ],
-        "images": ["././assets/projects/TheSimonGame/simon_game.png"]
+        "images": ["./assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
       {
-        "period": "Jul 2025 - Dez 2025",
+        "period": "Out 2023 - Presente",
         "role": "Líder de Squad & Dev Full Stack",
         "company": "@ Engplay (SaaS)",
         "desc": "Parceria estratégica entre Porto Digital & UNIT. Liderei a Squad 28 no desenvolvimento de soluções de retenção.",
