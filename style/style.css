@@ -126,7 +126,7 @@ input:focus, textarea:focus {
 }
 
 main {
-  padding: 0 10%; /* Melhor adaptabilidade em telas médias */
+  padding: 0 10%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -1112,7 +1112,7 @@ footer {
   }
 
   /* Ajustes Mobile Gerais */
-  .hero h1 { font-size: 2.5rem; } /* Reduzido para melhor leitura */
+  .hero h1 { font-size: 2.5rem; }
   .hero h2 { font-size: 1.8rem; }
   .about-content { grid-template-columns: 1fr; }
   .form-group { flex-direction: column; }
@@ -1148,4 +1148,30 @@ footer {
     padding: 10px 20px;
     width: fit-content;
   }
+
+  /* --- AJUSTE FINAL: CUBO PEQUENO NO MOBILE --- */
+  .hero-visual {
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cube-wrapper, .face {
+    width: 120px; 
+    height: 120px; 
+  }
+
+  .front  { transform: rotateY(0deg) translateZ(60px); }
+  .back   { transform: rotateY(180deg) translateZ(60px); }
+  .right  { transform: rotateY(90deg) translateZ(60px); }
+  .left   { transform: rotateY(-90deg) translateZ(60px); }
+  .top    { transform: rotateX(90deg) translateZ(60px); }
+  .bottom { transform: rotateX(-90deg) translateZ(60px); }
 }
