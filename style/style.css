@@ -226,6 +226,44 @@ header {
   background: rgba(100, 255, 218, 0.1);
 }
 
+/* --- Language Switch Button --- */
+.lang-btn {
+  font-family: var(--font-mono); 
+  font-size: 0.8rem;
+  color: var(--primary); 
+  background: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn:hover {
+  background: rgba(100, 255, 218, 0.1); 
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.2); 
+  transform: translateY(-2px); 
+}
+
+.lang-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 880px) {
+  .lang-btn {
+    margin-left: 0;
+    margin-top: 10px; 
+    font-size: 1rem; 
+    padding: 10px 20px;
+    width: fit-content;
+  }
+}
+
 /* =========================================
    4. HERO SECTION
    ========================================= */

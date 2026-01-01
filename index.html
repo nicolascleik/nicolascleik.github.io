@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Nicolas Cleik | Software Engineer</title>
-    <meta name="description" content="Nicolas Cleik | Software Engineer specializing in Python, JavaScript, and Scalable Architecture. Building robust backend systems and intuitive full-stack solutions." />
-    <meta name="keywords" content="Nicolas Cleik, Software Engineer, Python Developer, JavaScript, Full Stack, Backend, Aracaju, Portfolio, System Design" />
+    <meta
+      name="description"
+      content="Nicolas Cleik | Software Engineer specializing in Python, JavaScript, and Scalable Architecture."
+    />
+    <meta
+      name="keywords"
+      content="Nicolas Cleik, Software Engineer, Python, JavaScript, Backend, Portfolio"
+    />
     <meta name="author" content="Nicolas Cleik" />
     <meta name="robots" content="index, follow" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cleik.dev/" />
     <meta property="og:title" content="Nicolas Cleik | Software Engineer" />
-    <meta property="og:description" content="Building robust backend systems and intuitive full-stack solutions. Python, JS & SQL." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg" />
+    <meta
+      property="og:description"
+      content="Building robust backend systems and intuitive full-stack solutions."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nicolas Cleik | Software Engineer" />
-    <meta name="twitter:description" content="Transitioning from clean code to scalable architecture." />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg" />
+    <meta
+      name="twitter:description"
+      content="Transitioning from clean code to scalable architecture."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,35 +46,30 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="./assets/favicon/favicon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon.png"
+    />
+    <link rel="apple-touch-icon" href="./assets/favicon/favicon.png" />
 
     <link rel="stylesheet" href="./style/style.css" />
     <script src="./script/script.js" defer></script>
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nicolas Cleik",
-      "jobTitle": "Software Engineer",
-      "url": "https://cleik.dev",
-      "image": "https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg",
-      "sameAs": [
-        "https://github.com/nicolascleik",
-        "https://www.linkedin.com/in/nicolascleik/",
-        "https://instagram.com/dev.cleik"
-      ],
-      "knowsAbout": [
-        "Software Engineering",
-        "Python",
-        "JavaScript",
-        "Scalable Architecture",
-        "Backend Development",
-        "System Design"
-      ],
-      "description": "Software Engineer specializing in Python, JavaScript, and Scalable Architecture."
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicolas Cleik",
+        "jobTitle": "Software Engineer",
+        "url": "https://cleik.dev",
+        "sameAs": [
+          "https://github.com/nicolascleik",
+          "https://www.linkedin.com/in/nicolascleik/",
+          "https://instagram.com/dev.cleik"
+        ]
+      }
     </script>
   </head>
 
@@ -68,46 +81,55 @@
         <div class="logo">
           <span class="bracket">&lt;</span>NC<span class="bracket">/&gt;</span>
         </div>
+
         <ul class="nav-links">
-          <li><a href="#home">_hello</a></li>
-          <li><a href="#projects">_projects</a></li>
-          <li><a href="#about">_about</a></li>
-          <li><a href="#experience">_experience</a></li>
-          <li><a href="#publications">_knowledge</a></li>
-          <li><a href="#contact">_contact</a></li>
+          <li><a href="#home" data-i18n="nav.home"></a></li>
+          <li><a href="#projects" data-i18n="nav.projects"></a></li>
+          <li><a href="#about" data-i18n="nav.about"></a></li>
+          <li><a href="#experience" data-i18n="nav.experience"></a></li>
+          <li><a href="#publications" data-i18n="nav.knowledge"></a></li>
+          <li><a href="#contact" data-i18n="nav.contact"></a></li>
           <li>
-            <a href="./assets/resume.pdf" target="_blank" class="btn-resume">Resume.pdf</a>
+            <a
+              href="./assets/resume.pdf"
+              target="_blank"
+              class="btn-resume"
+              data-i18n="nav.resume"
+            ></a>
+          </li>
+          <li>
+            <button id="lang-switch" class="lang-btn">EN / PT</button>
           </li>
         </ul>
+
         <button class="hamburger" aria-label="Menu Mobile">
-            <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero hidden">
-        <div class="hero-content">
-           </div>
+        <div class="hero-content"></div>
 
         <div class="hero-visual">
-            <div class="cube-wrapper">
-                <div class="cube">
-                    <div class="face front"></div>
-                    <div class="face back"></div>
-                    <div class="face right"></div>
-                    <div class="face left"></div>
-                    <div class="face top"></div>
-                    <div class="face bottom"></div>
-                </div>
+          <div class="cube-wrapper">
+            <div class="cube">
+              <div class="face front"></div>
+              <div class="face back"></div>
+              <div class="face right"></div>
+              <div class="face left"></div>
+              <div class="face top"></div>
+              <div class="face bottom"></div>
             </div>
+          </div>
         </div>
       </section>
 
       <section id="projects" class="section hidden">
         <div class="section-header">
           <span class="section-number">01.</span>
-          <h3>Featured Projects</h3>
+          <h3 data-i18n="section.projects"></h3>
           <div class="line"></div>
         </div>
         <div class="projects-grid"></div>
@@ -116,7 +138,7 @@
       <section id="about" class="section hidden">
         <div class="section-header">
           <span class="section-number">02.</span>
-          <h3>About Me</h3>
+          <h3 data-i18n="section.about"></h3>
           <div class="line"></div>
         </div>
         <div class="about-content"></div>
@@ -125,7 +147,7 @@
       <section id="experience" class="section hidden">
         <div class="section-header">
           <span class="section-number">03.</span>
-          <h3>Professional Experience</h3>
+          <h3 data-i18n="section.experience"></h3>
           <div class="line"></div>
         </div>
         <div class="timeline"></div>
@@ -134,7 +156,7 @@
       <section id="publications" class="section hidden">
         <div class="section-header">
           <span class="section-number">04.</span>
-          <h3>Knowledge Sharing</h3>
+          <h3 data-i18n="section.knowledge"></h3>
           <div class="line"></div>
         </div>
         <div class="publications-grid"></div>
@@ -143,25 +165,40 @@
       <section id="contact" class="section hidden">
         <div class="contact-container">
           <span class="section-number">05.</span>
-          <h2 class="big-heading">What's Next?</h2>
-          <p class="contact-desc">
-            I am currently looking for new opportunities to contribute to
-            challenging projects. Whether you have a question or just want to
-            say hi, my inbox is always open.
-          </p>
+          <h2 class="big-heading" data-i18n="contact.title"></h2>
 
-          <form class="contact-form" action="https://formspree.io/f/mdkybobb" method="POST">
+          <p class="contact-desc" data-i18n="contact.desc"></p>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mdkybobb"
+            method="POST"
+          >
             <div class="form-group">
-              <input type="text" name="name" required placeholder="Name" />
-              <input type="email" name="email" required placeholder="Email" />
+              <input
+                type="text"
+                name="name"
+                required
+                data-i18n-placeholder="contact.name"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                data-i18n-placeholder="contact.email"
+              />
             </div>
             <textarea
               name="message"
               rows="5"
               required
-              placeholder="Your Message"
+              data-i18n-placeholder="contact.message"
             ></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-i18n="contact.btn"
+            ></button>
             <p id="form-status" class="status-msg"></p>
           </form>
         </div>
@@ -169,18 +206,17 @@
     </main>
 
     <footer>
-      <p>Designed & Built by Nicolas Cleik</p>
+      <p data-i18n="footer.text"></p>
       <div class="socials"></div>
     </footer>
 
     <div id="modal-overlay" class="modal-hidden">
-        <div class="modal-content">
-            <div class="modal-header-bar">
-                <button id="close-modal-btn">&times;</button>
-            </div>
-            <div id="modal-body">
-                </div>
+      <div class="modal-content">
+        <div class="modal-header-bar">
+          <button id="close-modal-btn">&times;</button>
         </div>
+        <div id="modal-body"></div>
+      </div>
     </div>
   </body>
 </html>

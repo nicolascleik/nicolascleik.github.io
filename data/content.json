@@ -1,149 +1,390 @@
 {
-  "profile": {
-    "name": "Nicolas Cleik",
-    "role": "> Software Engineer | Python (OOP), JS & SQL",
-    "description": "Transitioning from clean code to scalable architecture. I build robust backend systems and intuitive full-stack solutions.",
-    "avatar": "./assets/header/me.jpg",
-    "social": {
-      "github": "https://github.com/nicolascleik",
-      "linkedin": "https://www.linkedin.com/in/nicolascleik/",
-      "instagram": "https://instagram.com/dev.cleik"
+  "en": {
+    "nav": {
+      "home": "_hello",
+      "projects": "_projects",
+      "about": "_about",
+      "experience": "_experience",
+      "knowledge": "_knowledge",
+      "contact": "_contact",
+      "resume": "Resume.pdf"
     },
-    "resumeLink": "#",
-    "contactAction": "https://formspree.io/f/mdkybobb"
-  },
-  "about": {
-    "bio": [
-      "My career is built on the belief that <strong>software quality is non-negotiable</strong>. I advocate for a 'Quality-First' approach, where postponing a release by two days to ensure <span class='highlight'>Test-Driven Development (TDD)</span> and solid architectural patterns is more valuable than delivering fragile code fast.",
-      "With a background bridging <strong>Academic Research</strong> and <strong>Technical Leadership</strong>, I specialize in translating complex business requirements (like Churn reduction) into scalable technical solutions. My focus has shifted from merely 'writing code' to <strong>designing resilient systems</strong> capable of evolving without accumulating technical debt."
+    "section": {
+      "projects": "Featured Projects",
+      "about": "About Me",
+      "experience": "Professional Experience",
+      "knowledge": "Knowledge Sharing"
+    },
+    "contact": {
+      "title": "What's Next?",
+      "desc": "I am currently looking for new opportunities to contribute to challenging projects. Whether you have a question or just want to say hi, my inbox is always open.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Your Message",
+      "btn": "Send Message"
+    },
+    "footer": {
+      "text": "Designed & Built by Nicolas Cleik"
+    },
+    "profile": {
+      "name": "Nicolas Cleik",
+      "role": "> Software Engineer | Python (OOP), JS & SQL",
+      "description": "Transitioning from clean code to scalable architecture. I build robust backend systems and intuitive full-stack solutions.",
+      "avatar": "./assets/header/me.jpg",
+      "social": {
+        "github": "https://github.com/nicolascleik",
+        "linkedin": "https://www.linkedin.com/in/nicolascleik/",
+        "instagram": "https://instagram.com/dev.cleik"
+      },
+      "resumeLink": "./assets/resume.pdf",
+      "contactAction": "https://formspree.io/f/mdkybobb"
+    },
+    "about": {
+      "bio": [
+        "My career is built on the belief that <strong>software quality is non-negotiable</strong>. I advocate for a 'Quality-First' approach, where postponing a release by two days to ensure <span class='highlight'>Test-Driven Development (TDD)</span> and solid architectural patterns is more valuable than delivering fragile code fast.",
+        "With a background bridging <strong>Academic Research</strong> and <strong>Technical Leadership</strong>, I specialize in translating complex business requirements (like Churn reduction) into scalable technical solutions. My focus has shifted from merely 'writing code' to <strong>designing resilient systems</strong> capable of evolving without accumulating technical debt."
+      ],
+      "skillsTitle": "Core Competencies:",
+      "skills": [
+        "System Design & Architecture",
+        "Technical Leadership (Squad Lead)",
+        "Python (High-Performance)",
+        "Angular (State Management)",
+        "CI/CD & Code Review",
+        "IoT & Embedded C++"
+      ]
+    },
+    "projects": [
+      {
+        "id": "saas-retention",
+        "title": "SaaS Retention Engine",
+        "desc": "A strategic cancellation flow engineered to reduce Churn. Features a <strong>'Soft Landing' architecture</strong> (72h scheduled termination) to enable 'Win-Back' strategies. Integrated with <strong>Firebase Firestore</strong> to capture qualitative feedback for data-driven decision making.",
+        "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Data Analytics", "UX Strategy"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
+          { "label": "LIVE DEMO", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
+        ],
+        "images": ["./assets/projects/saas1.png"]
+      },
+      {
+        "id": "health-dashboard",
+        "title": "Interactive Health Dashboard",
+        "desc": "A comprehensive wellness interface featuring a real-time <strong>3D Asset Rendering</strong> (using Three.js) combined with biometric data visualization. Built with a modular ES6 architecture to manage state across multiple views.",
+        "techs": ["Three.js (WebGL)", "JavaScript (ES6 Modules)", "CSS3 Grid", "Responsive Design"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Interactive-Health-Dashboard", "type": "code" },
+          { "label": "LIVE DEMO", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
+        ],
+        "images": []
+      },
+      {
+        "id": "gym-architecture",
+        "title": "Core Gym Architecture",
+        "desc": "A high-performance management kernel designed with <strong>Clean Architecture</strong> principles. Deliberately built without frameworks to enforce strict MVC patterns and raw SQL optimization.",
+        "techs": ["Python 3", "Raw SQL", "MVC Pattern"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/GymSystemsTerminal", "type": "code" }
+        ],
+        "images": []
+      },
+      {
+        "id": "iot-hardware",
+        "title": "IoT Hardware Interface",
+        "desc": "Embedded system prototype for home automation. Focused on the <strong>Hardware Abstraction Layer (HAL)</strong> using C++ to manage sensor interrupts and actuator states with real-time constraints.",
+        "techs": ["C++ / Embedded", "Circuit Design", "Real-time"],
+        "links": [
+          { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
+        ],
+        "images": []
+      },
+      {
+        "id": "js-calculator",
+        "title": "JS Logic Calculator",
+        "desc": "A logic-layer implementation over a static UI. The core engineering challenge was the <strong>Input Mapping System</strong>, which creates a seamless hybrid experience by synchronizing Keyboard Events ('keydown') with the GUI.",
+        "techs": ["Vanilla JavaScript", "Event Handling", "Input Mapping", "Bootstrap 5"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
+          { "label": "LIVE DEMO", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
+        ],
+        "images": []
+      },
+      {
+        "id": "simon-game",
+        "title": "The Simon Game",
+        "desc": "Classic memory game re-engineered with pure Vanilla JavaScript. Features a custom asynchronous game loop for sequence generation and strict pattern matching algorithms for user validation.",
+        "techs": ["JavaScript (ES6+)", "DOM Manipulation", "HTML5", "CSS3"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
+          { "label": "LIVE DEMO", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
+        ],
+        "images": []
+      }
     ],
-    "skillsTitle": "Core Competencies:",
-    "skills": [
-      "System Design & Architecture",
-      "Technical Leadership (Squad Lead)",
-      "Python (High-Performance)",
-      "Angular (State Management)",
-      "CI/CD & Code Review",
-      "IoT & Embedded C++"
+    "experience": [
+      {
+        "period": "Oct 2023 - Present",
+        "role": "Squad Leader & Full Stack Dev",
+        "company": "@ Engplay (SaaS)",
+        "desc": "Strategic partnership between Porto Digital & UNIT. Led Squad 28 in developing retention solutions.",
+        "achievements": [
+          "<strong>Leadership:</strong> Managed agile rituals and implemented 'Job Rotation', improving cross-functional knowledge.",
+          "<strong>Churn Reduction:</strong> Architected specific features to reduce cancellation rates, designing 'Soft Landing' windows.",
+          "<strong>Legacy Refactoring:</strong> Refactored Vanilla JS legacy codebase, eliminating duplication (DRY) and implementing dynamic loading.",
+          "<strong>Accessibility (a11y):</strong> Integrated Native Text-to-Speech (Web Speech API) and VLibras."
+        ]
+      }
+    ],
+    "publications": [
+      {
+        "id": "campus-party",
+        "icon": "🚀",
+        "title": "Campus Party: Smart Tourism Startup",
+        "tag": "Entrepreneurship & Innovation",
+        "desc": "Represented the <strong>KARUKA</strong> team at Campus Party Weekend. Showcased a Smart Tourism solution featuring AI-driven personalized itineraries.",
+        "longDesc": "<p>Our team developed KARUKA during the intense hackathon environment. The core value proposition was using AI to generate itineraries based on user personality types, not just popular spots.</p>",
+        "images": [],
+        "link": {
+          "text": "View Event Post ->",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7388952688929165312/",
+          "type": "external"
+        },
+        "footer": "Role: Team Manager & Developer"
+      },
+      {
+        "id": "qos-research",
+        "icon": "📡",
+        "title": "QoS & Network Slicing Deep Dive",
+        "tag": "Network Engineering Research",
+        "desc": "A technical breakdown of traffic prioritization mechanisms in 5G networks.",
+        "longDesc": "<p>This research explores the transition from simple connectivity to <strong>Quality of Experience (QoE)</strong>. By analyzing Packet Loss, Jitter, and Latency, we demonstrated how Network Slicing allows ISPs to create dedicated virtual networks for critical applications.</p>",
+        "images": [], 
+        "link": {
+          "text": "View Full Mural (Image)",
+          "url": "./assets/docs/qos-mural.jpg",
+          "type": "image" 
+        },
+        "footer": "Advisor: Prof. Bruno Nunes Barreto (Unit)"
+      },
+      {
+        "id": "angular-guide",
+        "icon": "📘",
+        "title": "Angular Ecosystem Guide",
+        "tag": "Technical Authorship",
+        "desc": "Authored a comprehensive 85-page engineering manual covering modern Angular architecture.",
+        "longDesc": "<p>This guide was born from a need to bridge the gap between Angular theory and real-world application. It covers everything from <strong>Dependency Injection</strong> and <strong>RxJS Observables</strong> to component lifecycle hooks.</p>",
+        "images": [],
+        "link": { 
+          "text": "Read Full PDF", 
+          "url": "./assets/docs/angular-guide.pdf", 
+          "type": "pdf" 
+        },
+        "footer": "Self-Published Resource"
+      },
+      {
+        "id": "angular-workshop",
+        "icon": "🎤",
+        "title": "\"Demystifying Angular\" Workshop",
+        "tag": "University Guest Lecturer",
+        "desc": "Invited by the Computer Science faculty to design and deliver an intensive hands-on workshop.",
+        "longDesc": "<p>Led live coding sessions translating complex concepts like State Management into simple, buildable blocks for students.</p>",
+        "images": [],
+        "link": { "text": "View LinkedIn ->", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7387080635128918017/", "type": "external" },
+        "footer": "Host: Prof. Josimar dos Santos"
+      }
     ]
   },
-  "projects": [
-    {
-      "title": "SaaS Retention Engine",
-      "desc": "A strategic cancellation flow engineered to reduce Churn. Features a <strong>'Soft Landing' architecture</strong> (72h scheduled termination) to enable 'Win-Back' strategies. Integrated with <strong>Firebase Firestore</strong> to capture qualitative feedback for data-driven decision making.",
-      "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Data Analytics", "UX Strategy"],
-      "links": [
-        { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
-        { "label": "LIVE DEMO", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
-      ]
+  "pt": {
+    "nav": {
+      "home": "_olá",
+      "projects": "_projetos",
+      "about": "_sobre",
+      "experience": "_experiência",
+      "knowledge": "_conhecimento",
+      "contact": "_contato",
+      "resume": "Currículo.pdf"
     },
-    {
-      "title": "Interactive Health Dashboard",
-      "desc": "A comprehensive wellness interface featuring a real-time <strong>3D Asset Rendering</strong> (using Three.js) combined with biometric data visualization. Built with a modular ES6 architecture to manage state across multiple views.",
-      "techs": ["Three.js (WebGL)", "JavaScript (ES6 Modules)", "CSS3 Grid", "Responsive Design"],
-      "links": [
-        { "label": "GITHUB", "url": "https://github.com/nicolascleik/Interactive-Health-Dashboard", "type": "code" },
-        { "label": "LIVE DEMO", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
-      ]
+    "section": {
+      "projects": "Projetos em Destaque",
+      "about": "Sobre Mim",
+      "experience": "Experiência Profissional",
+      "knowledge": "Compartilhando Conhecimento"
     },
-    {
-      "title": "Core Gym Architecture",
-      "desc": "A high-performance management kernel designed with <strong>Clean Architecture</strong> principles. Deliberately built without frameworks to enforce strict MVC patterns and raw SQL optimization.",
-      "techs": ["Python 3", "Raw SQL", "MVC Pattern"],
-      "links": [
-        { "label": "GITHUB", "url": "https://github.com/nicolascleik/GymSystemsTerminal", "type": "code" }
-      ]
+    "contact": {
+      "title": "O Que Vem a Seguir?",
+      "desc": "Estou atualmente procurando novas oportunidades para contribuir com projetos desafiadores. Se você tem uma pergunta ou apenas quer dizer oi, minha caixa de entrada está sempre aberta.",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Sua Mensagem",
+      "btn": "Enviar Mensagem"
     },
-    {
-      "title": "IoT Hardware Interface",
-      "desc": "Embedded system prototype for home automation. Focused on the <strong>Hardware Abstraction Layer (HAL)</strong> using C++ to manage sensor interrupts and actuator states with real-time constraints.",
-      "techs": ["C++ / Embedded", "Circuit Design", "Real-time"],
-      "links": [
-        { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
-      ]
+    "footer": {
+      "text": "Desenhado & Construído por Nicolas Cleik"
     },
-    {
-      "title": "JS Logic Calculator",
-      "desc": "A logic-layer implementation over a static UI. The core engineering challenge was the <strong>Input Mapping System</strong>, which creates a seamless hybrid experience by synchronizing Keyboard Events ('keydown') with the GUI.",
-      "techs": ["Vanilla JavaScript", "Event Handling", "Input Mapping", "Bootstrap 5"],
-      "links": [
-        { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
-        { "label": "LIVE DEMO", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
-      ]
-    },
-    {
-      "title": "The Simon Game",
-      "desc": "Classic memory game re-engineered with pure Vanilla JavaScript. Features a custom asynchronous game loop for sequence generation and strict pattern matching algorithms for user validation.",
-      "techs": ["JavaScript (ES6+)", "DOM Manipulation", "HTML5", "CSS3"],
-      "links": [
-        { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
-        { "label": "LIVE DEMO", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
-      ]
-    }
-  ],
-  "experience": [
-    {
-      "period": "2023 - Present",
-      "role": "Squad Leader & Full Stack Dev",
-      "company": "@ Engplay (SaaS)",
-      "desc": "Strategic partnership between Porto Digital & UNIT. Led Squad 28 in developing retention solutions.",
-      "achievements": [
-        "<strong>Leadership:</strong> Managed agile rituals and implemented 'Job Rotation', improving cross-functional knowledge.",
-        "<strong>Churn Reduction:</strong> Architected specific features to reduce cancellation rates, designing 'Soft Landing' windows.",
-        "<strong>Legacy Refactoring:</strong> Refactored Vanilla JS legacy codebase, eliminating duplication (DRY) and implementing dynamic loading.",
-        "<strong>Accessibility (a11y):</strong> Integrated Native Text-to-Speech (Web Speech API) and VLibras."
-      ]
-    }
-  ],
-  "publications": [
-    {
-      "icon": "🚀",
-      "title": "Campus Party: Smart Tourism Startup",
-      "tag": "Entrepreneurship & Innovation",
-      "desc": "Represented the <strong>KARUKA</strong> team at Campus Party Weekend. Showcased a Smart Tourism solution featuring <strong>AI-driven personalized itineraries</strong> and gamification strategies. The project, conceived during a Porto Digital challenge, aims to digitalize the tourist experience in Aracaju.",
-      "link": {
-        "text": "View Event Post ->",
-        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7388952688929165312/"
+    "profile": {
+      "name": "Nicolas Cleik",
+      "role": "> Engenheiro de Software | Python (POO), JS & SQL",
+      "description": "Transitando de código limpo para arquitetura escalável. Construo sistemas backend robustos e soluções full-stack intuitivas.",
+      "avatar": "./assets/header/me.jpg",
+      "social": {
+        "github": "https://github.com/nicolascleik",
+        "linkedin": "https://www.linkedin.com/in/nicolascleik/",
+        "instagram": "https://instagram.com/dev.cleik"
       },
-      "footer": "Role: Team Manager & Developer"
+      "resumeLink": "./assets/resume.pdf",
+      "contactAction": "https://formspree.io/f/mdkybobb"
     },
-    {
-      "id": "qos-research",
-      "icon": "📡",
-      "title": "QoS & Network Slicing Deep Dive",
-      "tag": "Network Engineering Research",
-      "desc": "A technical breakdown of traffic prioritization mechanisms in 5G networks.",
-      "longDesc": "<p>This research explores the transition from simple connectivity to <strong>Quality of Experience (QoE)</strong>...</p>",
-      "images": [], 
-      "link": {
-        "text": "View Full Mural (Image)",
-        "url": "./assets/docs/qos-mural.jpg",
-        "type": "image" 
+    "about": {
+      "bio": [
+        "Minha carreira é construída na crença de que <strong>a qualidade do software não é negociável</strong>. Defendo uma abordagem 'Quality-First', onde adiar um lançamento por dois dias para garantir <span class='highlight'>Test-Driven Development (TDD)</span> e padrões arquiteturais sólidos é mais valioso do que entregar código frágil rapidamente.",
+        "Com um histórico unindo <strong>Pesquisa Acadêmica</strong> e <strong>Liderança Técnica</strong>, especializo-me em traduzir requisitos de negócios complexos (como redução de Churn) em soluções técnicas escaláveis. Meu foco mudou de apenas 'escrever código' para <strong>projetar sistemas resilientes</strong> capazes de evoluir sem acumular dívida técnica."
+      ],
+      "skillsTitle": "Competências Principais:",
+      "skills": [
+        "Design de Sistemas & Arquitetura",
+        "Liderança Técnica (Squad Lead)",
+        "Python (Alta Performance)",
+        "Angular (Gerenciamento de Estado)",
+        "CI/CD & Code Review",
+        "IoT & Embedded C++"
+      ]
+    },
+    "projects": [
+      {
+        "id": "saas-retention",
+        "title": "Motor de Retenção SaaS",
+        "desc": "Um fluxo estratégico de cancelamento projetado para reduzir o Churn. Apresenta uma <strong>arquitetura de 'Soft Landing'</strong> (término agendado em 72h) para permitir estratégias de reconquista. Integrado com <strong>Firebase Firestore</strong> para capturar feedback qualitativo.",
+        "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Data Analytics", "Estratégia UX"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
+          { "label": "DEMO VIVA", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
+        ],
+        "images": ["./assets/projects/saas1.png"]
       },
-      "footer": "Advisor: Prof. Bruno Nunes Barreto (Unit)"
-    },
-    {
-      "id": "angular-guide",
-      "icon": "📘",
-      "title": "Angular Ecosystem Guide",
-      "tag": "Technical Authorship",
-      "desc": "Authored a comprehensive 85-page engineering manual.",
-      "longDesc": "<p>Born from a need to bridge the gap between theory and practice...</p>",
-      "images": [],
-      "link": { 
-        "text": "Read Full PDF", 
-        "url": "./assets/docs/angular-guide.pdf", 
-        "type": "pdf" 
+      {
+        "id": "health-dashboard",
+        "title": "Dashboard de Saúde Interativo",
+        "desc": "Uma interface de bem-estar abrangente com renderização <strong>3D em Tempo Real</strong> (Three.js) combinada com visualização de dados biométricos. Construído com arquitetura modular ES6.",
+        "techs": ["Three.js (WebGL)", "JavaScript (ES6 Modules)", "CSS3 Grid", "Design Responsivo"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Interactive-Health-Dashboard", "type": "code" },
+          { "label": "DEMO VIVA", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
+        ],
+        "images": []
       },
-      "footer": "Self-Published Resource"
-    },
-    {
-      "icon": "🎤",
-      "title": "\"Demystifying Angular\" Workshop",
-      "tag": "University Guest Lecturer",
-      "desc": "Invited by the Computer Science faculty to design and deliver an intensive hands-on workshop. Led live coding sessions translating complex concepts like State Management.",
-      "link": { "text": "View LinkedIn ->", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7387080635128918017/" },
-      "footer": "Host: Prof. Josimar dos Santos"
-    }
-  ]
+      {
+        "id": "gym-architecture",
+        "title": "Arquitetura Core de Academia",
+        "desc": "Um kernel de gerenciamento de alta performance projetado com princípios de <strong>Clean Architecture</strong>. Construído sem frameworks para reforçar padrões MVC estritos e otimização de SQL puro.",
+        "techs": ["Python 3", "Raw SQL", "Padrão MVC"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/GymSystemsTerminal", "type": "code" }
+        ],
+        "images": []
+      },
+      {
+        "id": "iot-hardware",
+        "title": "Interface de Hardware IoT",
+        "desc": "Protótipo de sistema embarcado para automação residencial. Focado na <strong>Camada de Abstração de Hardware (HAL)</strong> usando C++ para gerenciar interrupções de sensores e estados de atuadores.",
+        "techs": ["C++ / Embarcado", "Design de Circuito", "Tempo Real"],
+        "links": [
+          { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
+        ],
+        "images": []
+      },
+      {
+        "id": "js-calculator",
+        "title": "Calculadora Lógica JS",
+        "desc": "Implementação da camada lógica sobre uma UI estática. O desafio de engenharia foi o <strong>Sistema de Mapeamento de Entrada</strong>, sincronizando Eventos de Teclado com a GUI.",
+        "techs": ["Vanilla JavaScript", "Event Handling", "Input Mapping", "Bootstrap 5"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
+          { "label": "DEMO VIVA", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
+        ],
+        "images": []
+      },
+      {
+        "id": "simon-game",
+        "title": "O Jogo Simon",
+        "desc": "Jogo clássico de memória reengenheirado com JavaScript puro. Apresenta um loop de jogo assíncrono customizado e algoritmos estritos de validação de padrões.",
+        "techs": ["JavaScript (ES6+)", "Manipulação DOM", "HTML5", "CSS3"],
+        "links": [
+          { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
+          { "label": "DEMO VIVA", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
+        ],
+        "images": []
+      }
+    ],
+    "experience": [
+      {
+        "period": "Out 2023 - Presente",
+        "role": "Líder de Squad & Dev Full Stack",
+        "company": "@ Engplay (SaaS)",
+        "desc": "Parceria estratégica entre Porto Digital & UNIT. Liderei a Squad 28 no desenvolvimento de soluções de retenção.",
+        "achievements": [
+          "<strong>Liderança:</strong> Gerenciei rituais ágeis e implementei 'Job Rotation', melhorando o conhecimento multifuncional.",
+          "<strong>Redução de Churn:</strong> Arquitetei recursos específicos para reduzir taxas de cancelamento, projetando janelas de 'Soft Landing'.",
+          "<strong>Refatoração de Legado:</strong> Refatorei base de código legada em Vanilla JS, eliminando duplicação (DRY) e implementando carregamento dinâmico.",
+          "<strong>Acessibilidade (a11y):</strong> Integrei Text-to-Speech nativo (Web Speech API) e VLibras."
+        ]
+      }
+    ],
+    "publications": [
+      {
+        "id": "campus-party",
+        "icon": "🚀",
+        "title": "Campus Party: Startup de Turismo Inteligente",
+        "tag": "Empreendedorismo & Inovação",
+        "desc": "Representei a equipe <strong>KARUKA</strong> na Campus Party Weekend. Apresentamos uma solução de Turismo Inteligente com roteiros personalizados via IA.",
+        "longDesc": "<p>Nossa equipe desenvolveu o KARUKA durante o ambiente intenso do hackathon. A proposta de valor central era usar IA para gerar roteiros baseados na personalidade do usuário.</p>",
+        "images": [],
+        "link": {
+          "text": "Ver Post do Evento ->",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7388952688929165312/",
+          "type": "external"
+        },
+        "footer": "Papel: Gerente de Equipe & Desenvolvedor"
+      },
+      {
+        "id": "qos-research",
+        "icon": "📡",
+        "title": "QoS & Network Slicing Deep Dive",
+        "tag": "Pesquisa em Engenharia de Redes",
+        "desc": "Uma análise técnica dos mecanismos de priorização de tráfego em redes 5G.",
+        "longDesc": "<p>Esta pesquisa explora a transição da conectividade simples para a <strong>Qualidade de Experiência (QoE)</strong>. Analisando Perda de Pacotes, Jitter e Latência.</p>",
+        "images": [], 
+        "link": {
+          "text": "Ver Mural Completo (Imagem)",
+          "url": "./assets/docs/qos-mural.jpg",
+          "type": "image" 
+        },
+        "footer": "Orientador: Prof. Bruno Nunes Barreto (Unit)"
+      },
+      {
+        "id": "angular-guide",
+        "icon": "📘",
+        "title": "Guia do Ecossistema Angular",
+        "tag": "Autoria Técnica",
+        "desc": "Escrevi um manual de engenharia abrangente de 85 páginas cobrindo a arquitetura moderna do Angular.",
+        "longDesc": "<p>Este guia nasceu da necessidade de preencher a lacuna entre a teoria Angular e a aplicação no mundo real.</p>",
+        "images": [],
+        "link": { 
+          "text": "Ler PDF Completo", 
+          "url": "./assets/docs/angular-guide.pdf", 
+          "type": "pdf" 
+        },
+        "footer": "Recurso Publicado Independentemente"
+      },
+      {
+        "id": "angular-workshop",
+        "icon": "🎤",
+        "title": "Workshop \"Desmistificando Angular\"",
+        "tag": "Palestrante Convidado Universitário",
+        "desc": "Convidado pelo corpo docente de Ciência da Computação para projetar e ministrar um workshop prático intensivo.",
+        "longDesc": "<p>Liderei sessões de live coding traduzindo conceitos complexos como Gerenciamento de Estado em blocos simples.</p>",
+        "images": [],
+        "link": { "text": "Ver no LinkedIn ->", "url": "https://www.linkedin.com/feed/update/urn:li:activity:7387080635128918017/", "type": "external" },
+        "footer": "Anfitrião: Prof. Josimar dos Santos"
+      }
+    ]
+  }
 }
