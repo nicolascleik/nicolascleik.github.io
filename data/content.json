@@ -122,7 +122,7 @@
     ],
     "experience": [
       {
-        "period": "Oct 2023 - Present",
+        "period": "Jul 2025 - Dez 2025",
         "role": "Squad Leader & Full Stack Dev",
         "company": "@ Engplay (SaaS)",
         "desc": "Strategic partnership between Porto Digital & UNIT. Led Squad 28 in developing retention solutions.",
@@ -252,8 +252,8 @@
       {
         "id": "saas-retention",
         "title": "Motor de Retenção SaaS",
-        "desc": "Um fluxo estratégico de cancelamento projetado para reduzir o Churn. Apresenta uma <strong>arquitetura de 'Soft Landing'</strong> (término agendado em 72h) para permitir estratégias de reconquista. Integrado com <strong>Firebase Firestore</strong> para capturar feedback qualitativo.",
-        "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Data Analytics", "Estratégia UX"],
+        "desc": "Um fluxo estratégico de cancelamento projetado para reduzir o Churn. Apresenta uma <strong>arquitetura de 'Soft Landing'</strong> (término agendado em 72h) para permitir estratégias de reconquista. Integrado com <strong>Firebase Firestore</strong> para capturar feedback qualitativo para tomada de decisão baseada em dados.",
+        "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Análise de Dados", "Estratégia UX"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
@@ -263,8 +263,8 @@
       {
         "id": "health-dashboard",
         "title": "Dashboard de Saúde Interativo",
-        "desc": "Uma interface de bem-estar abrangente com renderização <strong>3D em Tempo Real</strong> (Three.js) combinada com visualização de dados biométricos. Construído com arquitetura modular ES6.",
-        "techs": ["Three.js (WebGL)", "JavaScript (ES6 Modules)", "CSS3 Grid", "Design Responsivo"],
+        "desc": "Uma interface de bem-estar abrangente com renderização <strong>3D em Tempo Real</strong> (usando Three.js) combinada com visualização de dados biométricos. Construído com arquitetura modular ES6 para gerenciar estado através de múltiplas visualizações.",
+        "techs": ["Three.js (WebGL)", "JavaScript (Módulos ES6)", "Grade CSS3", "Design Responsivo"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Interactive-Health-Dashboard", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
@@ -274,8 +274,8 @@
       {
         "id": "gym-architecture",
         "title": "Arquitetura Core de Academia",
-        "desc": "Um kernel de gerenciamento de alta performance projetado com princípios de <strong>Clean Architecture</strong>. Construído sem frameworks para reforçar padrões MVC estritos e otimização de SQL puro.",
-        "techs": ["Python 3", "Raw SQL", "Padrão MVC"],
+        "desc": "Um kernel de gerenciamento de alta performance projetado com princípios de <strong>Clean Architecture</strong>. Construído deliberadamente sem frameworks para reforçar padrões MVC estritos e otimização de SQL puro.",
+        "techs": ["Python 3", "SQL Puro", "Padrão MVC"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/GymSystemsTerminal", "type": "code" }
         ],
@@ -284,7 +284,7 @@
       {
         "id": "iot-hardware",
         "title": "Interface de Hardware IoT",
-        "desc": "Protótipo de sistema embarcado para automação residencial. Focado na <strong>Camada de Abstração de Hardware (HAL)</strong> usando C++ para gerenciar interrupções de sensores e estados de atuadores.",
+        "desc": "Protótipo de sistema embarcado para automação residencial. Focado na <strong>Camada de Abstração de Hardware (HAL)</strong> usando C++ para gerenciar interrupções de sensores e estados de atuadores com restrições de tempo real.",
         "techs": ["C++ / Embarcado", "Design de Circuito", "Tempo Real"],
         "links": [
           { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
@@ -294,8 +294,8 @@
       {
         "id": "js-calculator",
         "title": "Calculadora Lógica JS",
-        "desc": "Implementação da camada lógica sobre uma UI estática. O desafio de engenharia foi o <strong>Sistema de Mapeamento de Entrada</strong>, sincronizando Eventos de Teclado com a GUI.",
-        "techs": ["Vanilla JavaScript", "Event Handling", "Input Mapping", "Bootstrap 5"],
+        "desc": "Implementação da camada lógica sobre uma UI estática. O desafio central de engenharia foi o <strong>Sistema de Mapeamento de Entrada</strong>, que cria uma experiência híbrida contínua sincronizando Eventos de Teclado ('keydown') com a GUI.",
+        "techs": ["Vanilla JavaScript", "Manipulação de Eventos", "Mapeamento de Entrada", "Bootstrap 5"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
           { "label": "DEMO VIVA", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
@@ -305,7 +305,7 @@
       {
         "id": "simon-game",
         "title": "O Jogo Simon",
-        "desc": "Jogo clássico de memória reengenheirado com JavaScript puro. Apresenta um loop de jogo assíncrono customizado e algoritmos estritos de validação de padrões.",
+        "desc": "Jogo clássico de memória reengenheirado com JavaScript puro. Apresenta um loop de jogo assíncrono customizado para geração de sequências e algoritmos estritos de validação de padrões para verificação do usuário.",
         "techs": ["JavaScript (ES6+)", "Manipulação DOM", "HTML5", "CSS3"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
@@ -316,7 +316,7 @@
     ],
     "experience": [
       {
-        "period": "Out 2023 - Presente",
+        "period": "Jul 2025 - Dez 2025",
         "role": "Líder de Squad & Dev Full Stack",
         "company": "@ Engplay (SaaS)",
         "desc": "Parceria estratégica entre Porto Digital & UNIT. Liderei a Squad 28 no desenvolvimento de soluções de retenção.",
