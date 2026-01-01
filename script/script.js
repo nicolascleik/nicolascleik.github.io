@@ -222,21 +222,23 @@ function renderPublications(publications) {
 /* =========================================
    4. SISTEMA DE MODAL & CARROSSEL
    ========================================= */
-
-// --- Funções Básicas do Modal ---
 function openModal(contentHTML) {
     modalBody.innerHTML = contentHTML;
     modalOverlay.classList.remove('modal-hidden');
     modalOverlay.style.display = 'flex';
+    
+    document.body.style.overflow = 'hidden'; 
+
     setTimeout(() => { modalOverlay.style.opacity = '1'; }, 10);
 }
 
 function closeModal() {
-    // 1. Limpeza de Timers (Carrossel)
     if (carouselInterval) clearInterval(carouselInterval);
 
-    // 2. Animação de Saída
     modalOverlay.style.opacity = '0';
+    
+    document.body.style.overflow = '';
+
     setTimeout(() => {
         modalOverlay.classList.add('modal-hidden');
         modalOverlay.style.display = 'none';
