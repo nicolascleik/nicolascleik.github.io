@@ -2,6 +2,7 @@
    1. ESTADO GLOBAL & SELETORES
    ========================================= */
 let globalProjectsData = [];
+let globalPublicationsData = [];
 let slideIndex = 0;
 let carouselInterval = null;
 
@@ -18,6 +19,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         const data = await response.json();
         
         globalProjectsData = data.projects;
+        globalPublicationsData = data.publications;
+        window.globalPublicationsData = data.publications;
 
         renderProfileData(data.profile);
         renderProjects(data.projects);
@@ -160,36 +163,132 @@ function renderExperience(experiences) {
     `).join('');
 }
 
+// Função auxiliar para capturar o clique
+window.openPublicationDetails = function(event, id) {
+    // Se clicou em um link direto (PDF/Externo) dentro do card, não abre o modal de detalhes
+    if (event.target.closest('a') || event.target.closest('.stop-propagation')) return;
+
+    // Procura por ID ou por índice (fallback)
+    let pub = null;
+    if (globalProjectsData.publications) { // Verifica se existe no global (precisamos ajustar o carregamento)
+         pub = globalProjectsData.publications.find(p => p.id === id);
+    } 
+    // Fallback: Busca no array 'publications' se ele estiver acessível globalmente. 
+    // CORREÇÃO: Vamos garantir que 'data' seja global no próximo passo.
+    
+    // Por enquanto, vamos passar o objeto pub se conseguirmos ou buscar de novo.
+    // O ideal é salvar publications globalmente igual projects.
+    if (window.globalPublicationsData) {
+        pub = window.globalPublicationsData.find(p => p.id === id) || window.globalPublicationsData[id];
+    }
+
+    if (pub) openPublicationModal(pub);
+}
+
+// Função que desenha o Modal de Publicação (Similar ao de Projeto)
+// Função que desenha o Modal de Publicação
+function openPublicationModal(pub) {
+    // 1. Gera Slides (Carrossel opcional no topo - só aparece se tiver itens no array images)
+    let slidesHTML = '';
+    if (pub.images && pub.images.length > 0) {
+        let slidesImgs = pub.images.map(img => 
+            `<img src="${img}" class="carousel-slide fade">`
+        ).join('');
+        
+        slidesHTML = `
+            <div class="carousel-container">
+                ${slidesImgs}
+                ${pub.images.length > 1 ? `
+                <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+                ` : ''} 
+            </div>`;
+    }
+
+    // 2. Gera o Botão de Ação Principal (PDF, Imagem ou Link Externo)
+    let linkHTML = '';
+    if (pub.link) {
+        // Detecta o tipo para aplicar o comportamento correto
+        const linkType = pub.link.type || 'external';
+        
+        // Define o alvo (nova aba para externo, mesma aba para PDF/Image pois o JS intercepta)
+        const target = (linkType === 'pdf' || linkType === 'image') ? '_self' : '_blank';
+        
+        // Ícone opcional no botão
+        let btnIcon = '';
+        if (linkType === 'pdf') btnIcon = '📄 ';
+        if (linkType === 'image') btnIcon = '🖼️ ';
+        if (linkType === 'external') btnIcon = '🔗 ';
+
+        linkHTML = `
+            <a href="${pub.link.url}" 
+               target="${target}" 
+               class="btn btn-primary" 
+               data-type="${linkType}">
+               ${btnIcon}${pub.link.text}
+            </a>`;
+    }
+
+    // 3. Monta HTML Final
+    const contentHTML = `
+        <div class="modal-header-bar"></div>
+        
+        ${slidesHTML} <div class="modal-project-info">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <span style="font-size: 2rem;">${pub.icon}</span>
+                <span class="modal-tech-tag">${pub.tag}</span>
+            </div>
+            
+            <h2>${pub.title}</h2>
+            
+            <div style="color: #ccd6f6; margin-bottom: 20px; line-height: 1.8;">
+                ${pub.longDesc || pub.desc}
+            </div>
+
+            <p style="font-size: 0.9rem; color: #8892b0; border-left: 2px solid #64ffda; padding-left: 10px; margin-bottom: 20px;">
+                ${pub.footer}
+            </p>
+
+            <div class="modal-actions">
+                ${linkHTML}
+            </div>
+        </div>
+    `;
+
+    openModal(contentHTML);
+    
+    // Inicia Carrossel apenas se houver imagens
+    if (pub.images && pub.images.length > 0) {
+        slideIndex = 0;
+        showSlides(slideIndex);
+        startCarousel();
+    }
+}
+
 function renderPublications(publications) {
     const container = document.querySelector('.publications-grid');
     if (!container) return;
 
-    container.innerHTML = publications.map(pub => {
+    container.innerHTML = publications.map((pub, index) => {
+        // Gera ID se não tiver
+        const pubId = pub.id || `pub-${index}`;
+        
+        // Mantém os botões visíveis no card também
         let buttonsHTML = '';
-
         if (pub.link) {
+            // Nota: Adicionamos a classe 'stop-propagation' para impedir que clicar no botão abra o modal também
             const isPdf = pub.link.type === 'pdf';
             buttonsHTML += `
                 <a href="${pub.link.url}" 
-                   class="highlight-link" 
+                   class="highlight-link stop-propagation" 
                    target="${isPdf ? '_self' : '_blank'}" 
                    data-type="${pub.link.type || 'external'}"> 
                    ${pub.link.text} 
                 </a>`;
         }
 
-        if (pub.preview) {
-            buttonsHTML += `
-                <a href="${pub.preview.url}" 
-                   class="highlight-link secondary" 
-                   target="_self" 
-                   data-type="${pub.preview.type}"> 
-                   ${pub.preview.text} 
-                </a>`;
-        }
-
         return `
-            <div class="pub-card">
+            <div class="pub-card" onclick="openPublicationDetails(event, '${pubId}')" style="cursor: pointer;">
                 <div class="pub-header">
                     <div class="pub-icon">${pub.icon}</div>
                     <span class="pub-tag">${pub.tag}</span>
@@ -201,6 +300,9 @@ function renderPublications(publications) {
                         ${buttonsHTML}
                     </div>
                     <span class="advisor">${pub.footer}</span>
+                    <div style="margin-top: 10px; font-size: 0.8rem; color: #64ffda; text-align: right;">
+                        Read More <span class="arrow">→</span>
+                    </div>
                 </div>
             </div>
         `;

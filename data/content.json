@@ -108,33 +108,34 @@
       "footer": "Role: Team Manager & Developer"
     },
     {
+      "id": "qos-research",
       "icon": "📡",
       "title": "QoS & Network Slicing Deep Dive",
       "tag": "Network Engineering Research",
-      "desc": "A technical breakdown of traffic prioritization mechanisms. Analyzed how <strong>QoS (Quality of Service)</strong> mitigates Latency, Jitter, and Packet Loss.",
+      "desc": "A technical breakdown of traffic prioritization mechanisms in 5G networks.",
+      "longDesc": "<p>This research explores the transition from simple connectivity to <strong>Quality of Experience (QoE)</strong>...</p>",
+      "images": [], 
       "link": {
-        "text": "LinkedIn Post ->",
-        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7391631072859525120/",
-        "type": "external"
-      },
-      "preview": {
-        "text": "View Mural (Img)",
+        "text": "View Full Mural (Image)",
         "url": "./assets/docs/qos-mural.jpg",
-        "type": "image"
+        "type": "image" 
       },
       "footer": "Advisor: Prof. Bruno Nunes Barreto (Unit)"
     },
     {
+      "id": "angular-guide",
       "icon": "📘",
       "title": "Angular Ecosystem Guide",
       "tag": "Technical Authorship",
-      "desc": "Authored a comprehensive 85-page engineering manual covering modern Angular architecture.",
+      "desc": "Authored a comprehensive 85-page engineering manual.",
+      "longDesc": "<p>Born from a need to bridge the gap between theory and practice...</p>",
+      "images": [],
       "link": { 
-        "text": "Read PDF ->", 
+        "text": "Read Full PDF", 
         "url": "./assets/docs/angular-guide.pdf", 
         "type": "pdf" 
       },
-      "footer": ""
+      "footer": "Self-Published Resource"
     },
     {
       "icon": "🎤",
