@@ -28,6 +28,7 @@
     },
     "profile": {
       "name": "Nicolas Cleik",
+      "email": "nicolas@cleik.dev",
       "role": "> Software Engineer | Python (OOP), JS & SQL",
       "description": "Transitioning from clean code to scalable architecture. I build robust backend systems and intuitive full-stack solutions.",
       "avatar": "./assets/header/me.jpg",
@@ -227,6 +228,7 @@
     },
     "profile": {
       "name": "Nicolas Cleik",
+      "email": "nicolas@cleik.dev",
       "role": "> Engenheiro de Software | Python (POO), JS & SQL",
       "description": "Transitando de código limpo para arquitetura escalável. Construo sistemas backend robustos e soluções full-stack intuitivas.",
       "avatar": "./assets/header/me.jpg",
