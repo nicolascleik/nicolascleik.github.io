@@ -73,6 +73,17 @@
         ]
       },
       {
+        "id": "portfolio-engine",
+        "title": "High-Performance Portfolio Engine",
+        "desc": "More than a landing page, this is a case study in **Web Performance Optimization (WPO)**. Engineered with a **Framework-less SPA architecture** to achieve perfect 100/100 Lighthouse scores. Features a custom **JSON rendering engine** to decouple data from UI, lightweight **i18n state management**, and Cloudflare security rules.",
+        "techs": ["Vanilla JS (ES6+)", "WPO (Performance)", "JSON Architecture", "Cloudflare CI/CD"],
+        "links": [
+          { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/nicolascleik.github.io", "type": "code" },
+          { "label": "LIVE DEMO", "url": "https://cleik.dev", "type": "live" }
+        ],
+        "images": ["./assets/projects/Portfolio/cover.webp"]
+      },
+      {
         "id": "health-dashboard",
         "title": "Interactive Health Dashboard",
         "desc": "A comprehensive wellness interface featuring a real-time <strong>3D Asset Rendering</strong> (using Three.js) combined with biometric data visualization. Built with a modular ES6 architecture to manage state across multiple views.",
@@ -263,7 +274,7 @@
         "techs": ["Firebase (Firestore)", "JavaScript (Modules)", "Análise de Dados", "Estratégia UX"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/saas-churn-reduction-system", "type": "code" },
-          { "label": "DEMO VIVA", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
+          { "label": "DEMO LIVE", "url": "https://cleik.dev/saas-churn-reduction-system/", "type": "live" }
         ],
         "images": [
             "./assets/projects/SaaSRetentionEngine/home_dark_mode.png", 
@@ -273,13 +284,24 @@
         ]
       },
       {
+        "id": "portfolio-engine",
+        "title": "Motor de Portfólio de Alta Performance",
+        "desc": "Mais que uma landing page, este é um estudo de caso em **Otimização de Performance Web (WPO)**. Engenheirado com uma **arquitetura SPA sem frameworks** para atingir pontuação 100/100 no Lighthouse. Apresenta um **motor de renderização JSON** próprio para desacoplar dados da interface, sistema leve de **i18n (internacionalização)** e regras de segurança Cloudflare.",
+        "techs": ["Vanilla JS (ES6+)", "WPO (Performance)", "Arquitetura JSON", "Cloudflare CI/CD"],
+        "links": [
+          { "label": "CÓDIGO FONTE", "url": "https://github.com/nicolascleik/nicolascleik.github.io", "type": "code" },
+          { "label": "DEMO LIVE", "url": "https://cleik.dev", "type": "live" }
+        ],
+        "images": ["./assets/projects/Portfolio/cover.webp"]
+      },
+      {
         "id": "health-dashboard",
         "title": "Dashboard de Saúde Interativo",
         "desc": "Uma interface de bem-estar abrangente com renderização <strong>3D em Tempo Real</strong> (usando Three.js) combinada com visualização de dados biométricos. Construído com arquitetura modular ES6 para gerenciar estado através de múltiplas visualizações.",
         "techs": ["Three.js (WebGL)", "JavaScript (Módulos ES6)", "Grade CSS3", "Design Responsivo"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Interactive-Health-Dashboard", "type": "code" },
-          { "label": "DEMO VIVA", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
+          { "label": "DEMO LIVE", "url": "https://cleik.dev/Interactive-Health-Dashboard/", "type": "live" }
         ],
         "images": []
       },
@@ -310,7 +332,7 @@
         "techs": ["Vanilla JavaScript", "Manipulação de Eventos", "Mapeamento de Entrada", "Bootstrap 5"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
-          { "label": "DEMO VIVA", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
+          { "label": "DEMO LIVE", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
         ],
         "images": ["./assets/projects/JSLogicCalculator/calculator.png"]
       },
@@ -321,7 +343,7 @@
         "techs": ["JavaScript (ES6+)", "Manipulação DOM", "HTML5", "CSS3"],
         "links": [
           { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
-          { "label": "DEMO VIVA", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
+          { "label": "DEMO LIVE", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
         ],
         "images": ["./assets/projects/TheSimonGame/simon_game.png"]
       }
