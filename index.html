@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="google-site-verification" content="eq9YLlbxF73mVjmQR00mJaHgPWmVieUQVbo9Ql8ljt8" />
+    <meta
+      name="google-site-verification"
+      content="eq9YLlbxF73mVjmQR00mJaHgPWmVieUQVbo9Ql8ljt8"
+    />
 
     <title>Nicolas Cleik | Software Engineer</title>
     <meta
@@ -41,6 +44,8 @@
       content="https://raw.githubusercontent.com/nicolascleik/nicolascleik.github.io/main/assets/header/me.jpg"
     />
 
+    <link rel="preload" as="image" href="./assets/header/me.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,6 +60,14 @@
       href="./assets/favicon/favicon.png"
     />
     <link rel="apple-touch-icon" href="./assets/favicon/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./style/style.css?v=1.3" />
     <script src="./script/script.js?v=1.3" defer></script>
@@ -88,8 +101,12 @@
           <li><a href="#home" data-i18n="nav.home">_hello</a></li>
           <li><a href="#projects" data-i18n="nav.projects">_projects</a></li>
           <li><a href="#about" data-i18n="nav.about">_about</a></li>
-          <li><a href="#experience" data-i18n="nav.experience">_experience</a></li>
-          <li><a href="#publications" data-i18n="nav.knowledge">_knowledge</a></li>
+          <li>
+            <a href="#experience" data-i18n="nav.experience">_experience</a>
+          </li>
+          <li>
+            <a href="#publications" data-i18n="nav.knowledge">_knowledge</a>
+          </li>
           <li><a href="#contact" data-i18n="nav.contact">_contact</a></li>
           <li>
             <a
@@ -98,7 +115,8 @@
               class="btn-resume"
               data-i18n="nav.resume"
               data-type="pdf"
-            >Resume.pdf</a>
+              >Resume.pdf</a
+            >
           </li>
           <li>
             <button id="lang-switch" class="lang-btn">EN / PT</button>
@@ -114,7 +132,7 @@
     <main>
       <section id="home" class="hero hidden">
         <div class="hero-content">
-            <h1 style="display:none;">Nicolas Cleik - Software Engineer</h1>
+          <h1 style="display: none">Nicolas Cleik - Software Engineer</h1>
         </div>
 
         <div class="hero-visual">
@@ -173,7 +191,8 @@
           <h2 class="big-heading" data-i18n="contact.title">What's Next?</h2>
 
           <p class="contact-desc" data-i18n="contact.desc">
-            I am currently looking for new opportunities to contribute to challenging projects.
+            I am currently looking for new opportunities to contribute to
+            challenging projects.
           </p>
 
           <form
@@ -208,7 +227,9 @@
               type="submit"
               class="btn btn-primary"
               data-i18n="contact.btn"
-            >Send Message</button>
+            >
+              Send Message
+            </button>
             <p id="form-status" class="status-msg"></p>
           </form>
         </div>
