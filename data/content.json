@@ -74,8 +74,8 @@
       },
       {
         "id": "portfolio-engine",
-        "title": "High-Performance Portfolio Engine",
-        "desc": "More than a landing page, this is a case study in **Web Performance Optimization (WPO)**. Engineered with a **Framework-less SPA architecture** to achieve perfect 100/100 Lighthouse scores. Features a custom **JSON rendering engine** to decouple data from UI, lightweight **i18n state management**, and Cloudflare security rules.",
+        "title": "High-Performance Portfolio",
+        "desc": "More than a landing page, this is a case study in Web Performance Optimization (WPO). Engineered with a Framework-less SPA architecture to achieve perfect 100/100 Lighthouse scores. Features a custom JSON rendering engine to decouple data from UI, lightweight i18n state management, and Cloudflare security rules.",
         "techs": ["Vanilla JS (ES6+)", "WPO (Performance)", "JSON Architecture", "Cloudflare CI/CD"],
         "links": [
           { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/nicolascleik.github.io", "type": "code" },
@@ -285,8 +285,8 @@
       },
       {
         "id": "portfolio-engine",
-        "title": "Motor de Portfólio de Alta Performance",
-        "desc": "Mais que uma landing page, este é um estudo de caso em **Otimização de Performance Web (WPO)**. Engenheirado com uma **arquitetura SPA sem frameworks** para atingir pontuação 100/100 no Lighthouse. Apresenta um **motor de renderização JSON** próprio para desacoplar dados da interface, sistema leve de **i18n (internacionalização)** e regras de segurança Cloudflare.",
+        "title": "Portfólio de Alta Performance",
+        "desc": "Mais que uma landing page, este é um estudo de caso em Otimização de Performance Web (WPO). Engenheirado com uma arquitetura SPA sem frameworks para atingir pontuação 100/100 no Lighthouse. Apresenta um motor de renderização JSON próprio para desacoplar dados da interface, sistema leve de i18n (internacionalização) e regras de segurança Cloudflare.",
         "techs": ["Vanilla JS (ES6+)", "WPO (Performance)", "Arquitetura JSON", "Cloudflare CI/CD"],
         "links": [
           { "label": "CÓDIGO FONTE", "url": "https://github.com/nicolascleik/nicolascleik.github.io", "type": "code" },
