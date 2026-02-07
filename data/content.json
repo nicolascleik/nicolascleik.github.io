@@ -57,6 +57,26 @@
     },
     "projects": [
       {
+        "id": "price-monitor-etl",
+        "title": "Hybrid ETL & API System",
+        "desc": "A polyglot architecture case study combining Python for heavy ETL operations and Node.js for high-concurrency data distribution. Features a fault-tolerant pipeline with SQL transaction rollbacks, 95% unit test coverage (Pytest), and a layered Express API.",
+        "techs": ["Python (ETL)", "Node.js (API)", "SQLite3", "System Design"],
+        "links": [
+          { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/Monitor_de_precos", "type": "code" }
+        ],
+        "images": ["./assets/projects/Monitor/"]
+      },
+      {
+        "id": "inventory-api",
+        "title": "Layered Enterprise API",
+        "desc": "A scalable inventory management system built with Node.js and MySQL. Implements a strict Layered Architecture (Controllers, Services, Repositories) to decouple business logic from database access. Includes Connection Pooling for performance and automated reporting streams.",
+        "techs": ["Node.js", "MySQL (Pool)", "Layered Architecture", "Jest"],
+        "links": [
+          { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/API_ALMOXARIFADO", "type": "code" }
+        ],
+        "images": ["./assets/projects/Almoxarifado/"]
+      },
+      {
         "id": "saas-retention",
         "title": "SaaS Retention Engine",
         "desc": "A strategic cancellation flow engineered to reduce Churn. Features a <strong>'Soft Landing' architecture</strong> (72h scheduled termination) to enable 'Win-Back' strategies. Integrated with <strong>Firebase Firestore</strong> to capture qualitative feedback for data-driven decision making.",
@@ -113,28 +133,6 @@
           { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
         ],
         "images": []
-      },
-      {
-        "id": "js-calculator",
-        "title": "JS Logic Calculator",
-        "desc": "A logic-layer implementation over a static UI. The core engineering challenge was the <strong>Input Mapping System</strong>, which creates a seamless hybrid experience by synchronizing Keyboard Events ('keydown') with the GUI.",
-        "techs": ["Vanilla JavaScript", "Event Handling", "Input Mapping", "Bootstrap 5"],
-        "links": [
-          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
-          { "label": "LIVE DEMO", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
-        ],
-        "images": ["./assets/projects/JSLogicCalculator/calculator.png"]
-      },
-      {
-        "id": "simon-game",
-        "title": "The Simon Game",
-        "desc": "Classic memory game re-engineered with pure Vanilla JavaScript. Features a custom asynchronous game loop for sequence generation and strict pattern matching algorithms for user validation.",
-        "techs": ["JavaScript (ES6+)", "DOM Manipulation", "HTML5", "CSS3"],
-        "links": [
-          { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
-          { "label": "LIVE DEMO", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
-        ],
-        "images": ["./assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
@@ -268,6 +266,26 @@
     },
     "projects": [
       {
+        "id": "price-monitor-etl",
+        "title": "Sistema Híbrido ETL & API",
+        "desc": "Um estudo de caso em arquitetura poliglota combinando Python para operações pesadas de ETL e Node.js para distribuição de dados em alta concorrência. Possui pipeline tolerante a falhas com rollback de transações SQL, 95% de cobertura de testes e API em camadas.",
+        "techs": ["Python (ETL)", "Node.js (API)", "SQLite3", "System Design"],
+        "links": [
+          { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/Monitor_de_precos", "type": "code" }
+        ],
+        "images": ["./assets/projects/Monitor/"]
+      },
+      {
+        "id": "inventory-api",
+        "title": "API Corporativa em Camadas",
+        "desc": "Sistema de gestão de inventário escalável em Node.js e MySQL. Implementa Arquitetura em Camadas (Controllers, Services, Repositories) para desacoplar regras de negócio do acesso ao banco. Inclui Connection Pooling para performance e streaming de relatórios.",
+        "techs": ["Node.js", "MySQL (Pool)", "Layered Architecture", "Jest"],
+        "links": [
+          { "label": "SOURCE CODE", "url": "https://github.com/nicolascleik/API_ALMOXARIFADO", "type": "code" }
+        ],
+        "images": ["./assets/projects/Almoxarifado/"]
+      },
+      {
         "id": "saas-retention",
         "title": "Motor de Retenção SaaS",
         "desc": "Um fluxo estratégico de cancelamento projetado para reduzir o Churn. Apresenta uma <strong>arquitetura de 'Soft Landing'</strong> (término agendado em 72h) para permitir estratégias de reconquista. Integrado com <strong>Firebase Firestore</strong> para capturar feedback qualitativo para tomada de decisão baseada em dados.",
@@ -324,28 +342,6 @@
           { "label": "DOCS", "url": "https://www.linkedin.com/posts/nicolascleik_smarthouse-documenta%C3%A7%C3%A3o-activity-7360759164534427649-UpsW", "type": "code" }
         ],
         "images": []
-      },
-      {
-        "id": "js-calculator",
-        "title": "Calculadora Lógica JS",
-        "desc": "Implementação da camada lógica sobre uma UI estática. O desafio central de engenharia foi o <strong>Sistema de Mapeamento de Entrada</strong>, que cria uma experiência híbrida contínua sincronizando Eventos de Teclado ('keydown') com a GUI.",
-        "techs": ["Vanilla JavaScript", "Manipulação de Eventos", "Mapeamento de Entrada", "Bootstrap 5"],
-        "links": [
-          { "label": "GITHUB", "url": "https://github.com/nicolascleik/Calculadora-Javascript", "type": "code" },
-          { "label": "DEMO LIVE", "url": "https://cleik.dev/Calculadora-Javascript/", "type": "live" }
-        ],
-        "images": ["./assets/projects/JSLogicCalculator/calculator.png"]
-      },
-      {
-        "id": "simon-game",
-        "title": "O Jogo Simon",
-        "desc": "Jogo clássico de memória reengenheirado com JavaScript puro. Apresenta um loop de jogo assíncrono customizado para geração de sequências e algoritmos estritos de validação de padrões para verificação do usuário.",
-        "techs": ["JavaScript (ES6+)", "Manipulação DOM", "HTML5", "CSS3"],
-        "links": [
-          { "label": "GITHUB", "url": "https://github.com/nicolascleik/The-Simon-Game---JS", "type": "code" },
-          { "label": "DEMO LIVE", "url": "https://cleik.dev/The-Simon-Game---JS/", "type": "live" }
-        ],
-        "images": ["./assets/projects/TheSimonGame/simon_game.png"]
       }
     ],
     "experience": [
